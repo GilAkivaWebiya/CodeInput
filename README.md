@@ -46,6 +46,7 @@ Then, you can use the CodeInput component in your JSX code:
 | onChange  | (newValue: string) => void  | Yes | - | A callback function that will be invoked whenever the OTP value changes. |
 | focus  | boolean  | No | false | Determines whether the input field should receive focus when the component is rendered. | 
 | inputMode  | InputMode | No | 'text' | Specifies the type of input mode for the field. Available options are: text/numeric. |
+| type | text/number | No | 'text' | -
 
 
 ## Contributing

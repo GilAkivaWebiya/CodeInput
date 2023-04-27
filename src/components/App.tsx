@@ -10,6 +10,7 @@ interface CodeInputProps {
   onChange: (newValue: string) => void
   focus?: boolean
   inputMode?: InputMode
+  type?: 'text' | 'number'
 }
 enum KEY_CODE {
   SHIFT = 'Shift',
@@ -40,6 +41,7 @@ const CodeInput: React.FC<CodeInputProps> = ({
   onChange,
   focus = false,
   inputMode = 'text',
+  type = 'text',
 }) => {
   const [value, setValue] = useState<string[]>([])
   const [currentValue, setCurrentValue] = useState<string | null>(null)
@@ -113,8 +115,12 @@ const CodeInput: React.FC<CodeInputProps> = ({
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>, index: number) => {
     let clonedValue = [...value]
-    const targetValue = event.target.value
-
+    let numberValue
+    if (type === 'number') {
+      const input = event.target.value
+      numberValue = input.replace(/\D/g, '') + ''
+    }
+    const targetValue = numberValue ?? event.target.value
     const userAgentString = navigator.userAgent.toLocaleLowerCase()
 
     const isSafari = userAgentString.indexOf('safari') > -1
