@@ -17,31 +17,19 @@ or
 ```bash
 yarn add otp-react-code-input
 ```
-## 
-```ruby
-enum InputMode {
-  NONE = 'none',
-  TEXT = 'text',
-  TEL = 'tel',
-  URL = 'url',
-  EMAIL = 'email',
-  NUMERIC = 'numeric',
-  DECIMAL = 'decimal',
-  SEARCH = 'search',
-}
-```
-## Api
+
+## API 
 
 
-| Name  | type | Required | default | 
-| ------------- | ------------- | ------------- | ------------- |
-| length  | Content Cell  | true | - | 
-| height  | number  | true | - |
-| width  | number  | true | - |
-| isError  | boolean  | false | false |
-| onChange  | (newValue: string) => void  | true | - |
-| focus  | boolean  | false | false |
-| inputMode  | inputMode | false | InputMode.TEXT |
+| Prop  | Type | Required | Default | Description |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| length  | Content Cell  | Yes | - | The length of the OTP. Users will be allowed to input exactly this number of characters. |
+| height  | number  | Yes | - | The height of the input field in pixels. |
+| width  | number  | Yes | - | The width of the input field in pixels. |
+| isError  | boolean  | No | false | Indicates whether an error state should be displayed for the input field. |
+| onChange  | (newValue: string) => void  | Yes | - | A callback function that will be invoked whenever the OTP value changes. |
+| focus  | boolean  | No | false | Determines whether the input field should receive focus when the component is rendered. | 
+| inputMode  | inputMode | No | InputMode.TEXT | Specifies the type of input mode for the field. Available options are: text | numeric. |
 
 ## Contributing
 Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
