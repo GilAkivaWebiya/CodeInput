@@ -30,13 +30,7 @@ enum InputMode {
   SEARCH = 'search',
 }
 ```
-
-
-## Contributing
-Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
-
-## License
-This package is licensed under the MIT License.
+## Api
 
 | Name  | type | Required |
 | ------------- | ------------- | ------------- |
@@ -56,3 +50,9 @@ This package is licensed under the MIT License.
   DECIMAL = 'decimal',
   SEARCH = 'search',
 }  | false |
+
+## Contributing
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+
+## License
+This package is licensed under the MIT License.
