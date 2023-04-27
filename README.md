@@ -1,3 +1,23 @@
+# OTP Inputs with SMS
+
+[![npm version](https://badge.fury.io/js/disruptive-otp-inputs.svg)](https://badge.fury.io/js/disruptive-otp-inputs)
+
+This npm package provides a disruptive solution for creating OTP code inputs with SMS functionality. It leverages the Twilio API to send OTP codes via SMS.
+
+## Installation
+
+### Install the package using npm and yarn:
+
+```bash
+npm install otp-react-code-input
+```
+
+or
+
+```bash
+yarn add otp-react-code-input
+```
+## 
 ```ruby
 enum InputMode {
   NONE = 'none',
@@ -11,6 +31,12 @@ enum InputMode {
 }
 ```
 
+
+## Contributing
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+
+## License
+This package is licensed under the MIT License.
 
 | Name  | type | Required |
 | ------------- | ------------- | ------------- |
