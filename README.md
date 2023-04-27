@@ -33,15 +33,15 @@ enum InputMode {
 ## Api
 
 
-| Name  | type | Required |
-| ------------- | ------------- | ------------- |
-| length  | Content Cell  | true |
-| height  | number  | true |
-| width  | number  | true |
-| isError  | boolean  | false |
-| onChange  | (newValue: string) => void  | true |
-| focus  | boolean  | false |
-| inputMode  | inputMode | false |
+| Name  | type | Required | default | 
+| ------------- | ------------- | ------------- | ------------- |
+| length  | Content Cell  | true | - | 
+| height  | number  | true | - |
+| width  | number  | true | - |
+| isError  | boolean  | false | false |
+| onChange  | (newValue: string) => void  | true | - |
+| focus  | boolean  | false | false |
+| inputMode  | inputMode | false | InputMode.TEXT |
 
 ## Contributing
 Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
