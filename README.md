@@ -1,6 +1,6 @@
 # OTP Inputs with SMS
 
-[![npm version](https://badge.fury.io/js/disruptive-otp-inputs.svg)](https://badge.fury.io/js/disruptive-otp-inputs)
+[![0.0.4](https://badge.fury.io/js/disruptive-otp-inputs.svg)](https://badge.fury.io/js/disruptive-otp-inputs)
 
 This npm package provides a disruptive solution for creating OTP code inputs with SMS functionality.
 
