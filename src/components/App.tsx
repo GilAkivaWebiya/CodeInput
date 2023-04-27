@@ -207,7 +207,6 @@ const CodeInput: React.FC<CodeInputProps> = ({
             value={value[index] || ''}
             key={index}
             inputMode={inputMode}
-            type='text'
             ref={ref}
             onFocus={handleFocus(ref, index)}
             onClick={handleFocus(ref, index)}
