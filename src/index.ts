@@ -1,3 +1,3 @@
-import CodeInput from "./components/App";
+import CodeInput from './components/App'
 
-export {CodeInput}
+export { CodeInput }
