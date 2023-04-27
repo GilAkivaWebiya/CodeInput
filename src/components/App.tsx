@@ -1,16 +1,7 @@
 import { Box } from '@mui/material'
 import React, { useEffect, useMemo, useState } from 'react'
 
-export enum InputMode {
-  NONE = 'none',
-  TEXT = 'text',
-  TEL = 'tel',
-  URL = 'url',
-  EMAIL = 'email',
-  NUMERIC = 'numeric',
-  DECIMAL = 'decimal',
-  SEARCH = 'search',
-}
+export type InputMode = 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search'
 interface CodeInputProps {
   length: number
   height: number
@@ -48,7 +39,7 @@ const CodeInput: React.FC<CodeInputProps> = ({
   isError = false,
   onChange,
   focus = false,
-  inputMode = InputMode.TEXT,
+  inputMode = 'text',
 }) => {
   const [value, setValue] = useState<string[]>([])
   const [currentValue, setCurrentValue] = useState<string | null>(null)
