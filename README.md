@@ -32,6 +32,7 @@ enum InputMode {
 ```
 ## Api
 
+
 | Name  | type | Required |
 | ------------- | ------------- | ------------- |
 | length  | Content Cell  | true |
@@ -40,16 +41,7 @@ enum InputMode {
 | isError  | boolean  | false |
 | onChange  | (newValue: string) => void  | true |
 | focus  | boolean  | false |
-| inputMode  | enum InputMode {
-  NONE = 'none',
-  TEXT = 'text',
-  TEL = 'tel',
-  URL = 'url',
-  EMAIL = 'email',
-  NUMERIC = 'numeric',
-  DECIMAL = 'decimal',
-  SEARCH = 'search',
-}  | false |
+| inputMode  | inputMode | false |
 
 ## Contributing
 Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
