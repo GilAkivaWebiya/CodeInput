@@ -46,4 +46,13 @@ This package is licensed under the MIT License.
 | isError  | boolean  | false |
 | onChange  | (newValue: string) => void  | true |
 | focus  | boolean  | false |
-| inputMode  | InputMode  | false |
+| inputMode  | enum InputMode {
+  NONE = 'none',
+  TEXT = 'text',
+  TEL = 'tel',
+  URL = 'url',
+  EMAIL = 'email',
+  NUMERIC = 'numeric',
+  DECIMAL = 'decimal',
+  SEARCH = 'search',
+}  | false |
