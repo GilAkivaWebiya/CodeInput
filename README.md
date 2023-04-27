@@ -17,9 +17,25 @@ or
 ```bash
 yarn add otp-react-code-input
 ```
+## Usage
+ 
+```javascript
+     import { CodeInput } from 'react-otp-input';
+```
+Then, you can use the CodeInput component in your JSX code:
 
-## API 
+```javascript
+     <CodeInput
+          isError={isError}
+          length={5}
+          inputMode='text'
+          onChange={handleValue}
+          width={64}
+          height={64}
+        />
+```
 
+## Props 
 
 | Prop  | Type | Required | Default | Description |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -31,8 +47,10 @@ yarn add otp-react-code-input
 | focus  | boolean  | No | false | Determines whether the input field should receive focus when the component is rendered. | 
 | inputMode  | InputMode | No | 'text' | Specifies the type of input mode for the field. Available options are: text/numeric. |
 
+
 ## Contributing
 Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+
 
 ## License
 This package is licensed under the MIT License.
