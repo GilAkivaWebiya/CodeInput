@@ -1,4 +1,4 @@
-```
+```ruby
 enum InputMode {
   NONE = 'none',
   TEXT = 'text',
