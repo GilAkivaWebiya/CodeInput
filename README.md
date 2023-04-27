@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/disruptive-otp-inputs.svg)](https://badge.fury.io/js/disruptive-otp-inputs)
 
-This npm package provides a disruptive solution for creating OTP code inputs with SMS functionality. It leverages the Twilio API to send OTP codes via SMS.
+This npm package provides a disruptive solution for creating OTP code inputs with SMS functionality.
 
 ## Installation
 
