@@ -29,7 +29,7 @@ yarn add otp-react-code-input
 | isError  | boolean  | No | false | Indicates whether an error state should be displayed for the input field. |
 | onChange  | (newValue: string) => void  | Yes | - | A callback function that will be invoked whenever the OTP value changes. |
 | focus  | boolean  | No | false | Determines whether the input field should receive focus when the component is rendered. | 
-| inputMode  | inputMode | No | InputMode.TEXT | Specifies the type of input mode for the field. Available options are: text | numeric. |
+| inputMode  | 'text' | No | InputMode.TEXT | Specifies the type of input mode for the field. Available options are: text/numeric. |
 
 ## Contributing
 Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
